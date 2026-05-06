@@ -1,0 +1,38 @@
+{
+  "Version": "2026.05.06.1",
+  "CompanyName": "Example Company",
+  "BrowserFavorites": [
+    {
+      "Name": "Start",
+      "Url": "https://start.contoso.com"
+    },
+    {
+      "Name": "Status",
+      "Url": "https://status.contoso.com"
+    },
+    {
+      "Name": "IT Self Service",
+      "Url": "https://help.contoso.com"
+    }
+  ],
+  "Shortcuts": [
+    {
+      "Name": "Company Start",
+      "Target": "https://start.contoso.com",
+      "Location": "PublicDesktop"
+    },
+    {
+      "Name": "Company Files",
+      "Target": "\\\\files.contoso.local\\Company",
+      "Location": "StartMenu"
+    }
+  ],
+  "TrustedSites": [
+    "contoso.com",
+    "contoso.local",
+    "start.contoso.com",
+    "status.contoso.com",
+    "files.contoso.local"
+  ]
+}
+

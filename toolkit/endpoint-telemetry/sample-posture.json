@@ -1,0 +1,33 @@
+{
+  "SchemaVersion": "2026.05.06.1",
+  "CollectedUtc": "2026-05-06T12:00:00.0000000Z",
+  "ComputerName": "EXAMPLE-LT-01",
+  "Windows": {
+    "ProductName": "Windows 11 Pro",
+    "Version": "23H2",
+    "Build": "22631",
+    "InstallDate": "2026-01-10T15:00:00Z"
+  },
+  "Security": {
+    "DefenderRealTimeProtection": true,
+    "DefenderAntivirusEnabled": true,
+    "FirewallServiceRunning": true,
+    "BitLockerProtectionStatus": "On",
+    "BitLockerVolumeStatus": "FullyEncrypted",
+    "TpmPresent": true,
+    "SecureBootEnabled": true
+  },
+  "Management": {
+    "IntuneManagementExtensionInstalled": true,
+    "IntuneManagementExtensionRunning": true,
+    "WindowsUpdateServiceRunning": true,
+    "PendingReboot": false
+  },
+  "Apps": {
+    "OfficeVersion": "16.0.00000.00000",
+    "OfficeChannel": "MonthlyEnterprise",
+    "EdgeVersion": "000.0.0000.00",
+    "TeamsInstalled": true
+  }
+}
+

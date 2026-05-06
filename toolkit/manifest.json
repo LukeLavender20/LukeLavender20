@@ -1,0 +1,62 @@
+{
+  "name": "enterprise-it-automation-toolkit",
+  "version": "2026.05.06.1",
+  "description": "Public-safe examples of enterprise IT automation, endpoint management, network share design, health evidence, and Microsoft 365 operations.",
+  "sections": [
+    {
+      "name": "Intune Win32 Package Pattern",
+      "path": "intune/win32-package-pattern",
+      "skills": ["Intune", "PowerShell", "Detection", "Rollback"]
+    },
+    {
+      "name": "Employee Resource Deployment",
+      "path": "intune/employee-resources",
+      "skills": ["Intune", "Shortcuts", "Browser Favorites", "Trusted Sites"]
+    },
+    {
+      "name": "Network Share Mapping",
+      "path": "intune/share-mapping",
+      "skills": ["SMB", "DNS", "Intune", "Windows"]
+    },
+    {
+      "name": "Endpoint Posture Telemetry",
+      "path": "endpoint-telemetry",
+      "skills": ["Defender", "BitLocker", "Firewall", "Windows Update", "Office", "Teams"]
+    },
+    {
+      "name": "Entra Device Lifecycle",
+      "path": "entra/entra-device-lifecycle.md",
+      "skills": ["Entra ID", "Intune", "Autopilot", "Device Inventory"]
+    },
+    {
+      "name": "Autopilot Enrollment Readiness",
+      "path": "autopilot/enrollment-readiness.md",
+      "skills": ["Autopilot", "Enrollment Status Page", "Zero Touch", "First Desktop"]
+    },
+    {
+      "name": "Conditional Access And MFA Rollout",
+      "path": "entra/conditional-access-mfa-rollout.md",
+      "skills": ["Conditional Access", "MFA", "Passwordless", "Identity Security"]
+    },
+    {
+      "name": "Windows Security Baseline",
+      "path": "security/windows-security-baseline.md",
+      "skills": ["Defender", "BitLocker", "LAPS", "TPM", "Secure Boot"]
+    },
+    {
+      "name": "Printer Deployment",
+      "path": "printers/printer-deployment.md",
+      "skills": ["Printers", "Intune", "Universal Print", "Detection"]
+    },
+    {
+      "name": "Managed Software Catalog",
+      "path": "software-catalog/package-catalog.example.json",
+      "skills": ["Software Inventory", "Package Ownership", "Updates", "Rollback"]
+    },
+    {
+      "name": "Health Evidence",
+      "path": "health",
+      "skills": ["Operations", "Deployment Evidence", "Dashboards"]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "PackageName": "Company Baseline Example",
+  "PackageId": "company-baseline-example",
+  "Version": "2026.05.06.1",
+  "Owner": "Endpoint Engineering",
+  "AssignmentIntent": "Required",
+  "Target": "All managed Windows workstations",
+  "OwnedState": [
+    "ProgramData marker file",
+    "Package-owned registry version",
+    "Package-owned shortcut"
+  ],
+  "Rollback": "Remove package-owned marker, shortcut, and registry version. Do not delete user data.",
+  "Evidence": "Record version, assignment, validation result, install count, detection count, and rollback path."
+}
+

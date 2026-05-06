@@ -1,14 +1,35 @@
 # Hi, I'm Luke
 
-I build practical IT systems that make small businesses easier to run: Microsoft 365 and Intune automation, endpoint management, network observability, internal web apps, inventory/workflow tools, and AI-assisted document processing.
+I build practical IT systems that make businesses easier to run: Microsoft 365, Entra ID, Intune, Autopilot, Defender, BitLocker, LAPS, endpoint telemetry, network shares, internal web apps, inventory/workflow tools, and AI-assisted document processing.
 
-My main work is a full operations platform for a cabinetry business. It connects office staff, installers, inventory, customer/job records, documents, Microsoft 365, endpoint deployment, and network health into one managed environment.
+My main work is a full operations platform for a production business. It connects office staff, installers, inventory, customer/job records, documents, Microsoft 365, endpoint deployment, network health, and self-service support into one managed environment.
+
+## Toolkit Highlights
+
+I keep sanitized examples of the enterprise patterns I use in [`toolkit/`](toolkit/README.md):
+
+- [`Enterprise capability map`](toolkit/enterprise-map.md): Entra, Intune, Autopilot, Defender, BitLocker, LAPS, M365 Apps, network shares, SharePoint, health dashboards, and PowerShell quality.
+- [`Repo map`](REPO-MAP.md): where everything lives and why.
+- [`Intune Win32 package pattern`](toolkit/intune/win32-package-pattern): install, detection, repair, validation, package metadata, and rollback notes.
+- [`Autopilot enrollment readiness`](toolkit/autopilot/enrollment-readiness.md): first-desktop reliability checks and enrollment guardrails.
+- [`Employee resources package`](toolkit/intune/employee-resources): managed favorites, desktop shortcuts, Start Menu shortcuts, trusted sites, and self-service entry points.
+- [`Network share mapping`](toolkit/intune/share-mapping): stable DNS names, SMB mappings, Explorer shortcuts, and detection logic.
+- [`Endpoint posture telemetry`](toolkit/endpoint-telemetry): read-only Windows, Defender, Firewall, BitLocker, TPM, Secure Boot, Office, Teams, browser, and Intune Management Extension reporting.
+- [`Entra device lifecycle`](toolkit/entra/entra-device-lifecycle.md): managed, Entra-only, stale, orphaned, Autopilot, and excluded-pilot states.
+- [`Conditional Access and MFA rollout`](toolkit/entra/conditional-access-mfa-rollout.md): staged identity security with report-only proof.
+- [`Windows security baseline`](toolkit/security/windows-security-baseline.md): Defender, Firewall, BitLocker, TPM, Secure Boot, LAPS, updates, and compliance visibility.
+- [`Microsoft Graph reporting`](toolkit/microsoft-graph): read-only device lifecycle reporting pattern.
+- [`Customer/job document workspace`](toolkit/sharepoint/customer-job-workspace.md): SMB-to-SharePoint file organization model.
+- [`Printer deployment`](toolkit/printers/printer-deployment.md): versioned printer package and detection model.
+- [`Managed software catalog`](toolkit/software-catalog): package ownership, assignment, detection, updates, and rollback.
+- [`Deployment evidence template`](toolkit/health/deployment-evidence-template.md): the audit trail I expect before broad rollout.
+- [`Network/endpoint handoff template`](toolkit/network/joint-change-handoff-template.md): owner, rollback, verification, and evidence for cross-domain changes.
 
 ## What I Work On
 
-- Microsoft 365 and Intune deployment: Autopilot planning, Company Portal apps, Win32 app packaging, Office configuration, browser bookmarks, employee shortcuts, trusted sites, endpoint telemetry, and device visibility reporting.
-- Windows endpoint operations: Defender, BitLocker, firewall, update posture, browser health, Office/Teams versions, inventory, drift detection, and quiet self-healing packages.
-- Network and infrastructure operations: internal DNS names, SMB shares, monitoring, alerting, uptime checks, switch/router observability, and stable employee entry points.
+- Microsoft 365 and Intune deployment: Autopilot planning, Company Portal apps, Win32 app packaging, Office configuration, browser bookmarks, employee shortcuts, trusted sites, endpoint telemetry, and Entra/Intune device visibility reporting.
+- Windows endpoint operations: Defender, BitLocker, Firewall, Windows Update, TPM/Secure Boot, LAPS, browser health, Office/Teams versions, inventory, drift detection, and quiet self-healing packages.
+- Network and infrastructure operations: stable DNS names, SMB shares, monitoring, alerting, uptime checks, switch/router observability, and employee-friendly entry points.
 - Business workflow software: desktop, web, and mobile tools for customer/job tracking, inventory receiving, installer assignment, photos/proof, scheduling, and reporting.
 - DocumentAI and automation: document intake, classification, extraction, cleanup review, operational summaries, and human-in-the-loop controls.
 - Operational documentation: runbooks, deployment evidence, rollback plans, health dashboards, and admin handoff notes.
@@ -30,6 +51,7 @@ Built managed deployment packages for employee devices:
 - Microsoft 365 Apps install and first-run guardrails.
 - Office sign-in policy to steer users to work accounts instead of personal accounts.
 - Managed browser favorites and employee self-service shortcuts.
+- Stable share shortcuts and mapped resources using DNS names instead of hardcoded server details.
 - Endpoint telemetry package reporting Windows, Defender, Firewall, BitLocker, TPM/Secure Boot, browsers, Office, Teams, and Intune Management Extension health.
 - Read-only Entra/Intune reconciliation reports for stale, missing, and unmanaged devices.
 
@@ -40,6 +62,16 @@ Helped build an operations model around stable internal names, monitoring, and e
 - Stable SMB/share names for office, scans, CNC, and design workflows.
 - Monitoring and dashboard patterns for reachability, service health, command queues, endpoint versions, and wrong-network detection.
 - Change-control notes separating network ownership from Microsoft 365/endpoint ownership.
+
+### Enterprise-Style Deployment Evidence
+
+I document broad changes like production work, not one-off fixes:
+- Package version and owned state.
+- Detection command and validation output.
+- Assignment scope and pilot result.
+- Rollback path.
+- Health/dashboard evidence.
+- Known risks and next verification point.
 
 ### DocumentAI
 

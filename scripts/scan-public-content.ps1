@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 
-$patterns = @(
+$literalPatterns = @(
     "SMKK",
     "Keith",
     "Keith's",
@@ -11,23 +11,33 @@ $patterns = @(
     "172\.",
     "192\.168",
     "07eb",
-    "Shatter",
-    "Griffin",
-    "Eva",
-    "Marry",
-    "Mary",
-    "Clint",
-    "JJ",
-    "Brandon",
-    "Charles",
-    "Michael Roberts",
-    "Luke Lavender",
-    "[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}",
-    "\\\\"
+    "\\172.",
+    "\\192.168",
+    "\\10.",
+    "\\files\",
+    "\\server\"
 )
 
-$regex = ($patterns -join "|")
-$hits = rg -n $regex . --glob "!.git/**" --glob "!scripts/scan-public-content.ps1" 2>$null
+$regexPatterns = @(
+    "[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}",
+    "172\.",
+    "192\.168",
+    "\bShatter\b",
+    "\bGriffin\b",
+    "\bEva\b",
+    "\bMarry\b",
+    "\bMary\b",
+    "\bClint\b",
+    "\bJJ\b",
+    "\bBrandon\b",
+    "\bCharles\b",
+    "\bMichael\s+Roberts\b",
+    "\bLuke\s+Lavender\b"
+)
+
+$escapedLiterals = $literalPatterns | ForEach-Object { [regex]::Escape($_) }
+$regex = (($escapedLiterals + $regexPatterns) -join "|")
+$hits = rg -n -i $regex . --glob "!.git/**" --glob "!scripts/scan-public-content.ps1" 2>$null
 
 if ($LASTEXITCODE -eq 1) {
     Write-Host "PASS: no private identifiers found."

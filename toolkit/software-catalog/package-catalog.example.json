@@ -1,0 +1,48 @@
+{
+  "SchemaVersion": "2026.05.06.1",
+  "Packages": [
+    {
+      "PackageId": "m365-apps-enterprise",
+      "DisplayName": "Microsoft 365 Apps Enterprise",
+      "Owner": "Endpoint Engineering",
+      "Platform": "Windows",
+      "Assignment": "Required",
+      "InstallCommand": "setup.exe /configure configuration.xml",
+      "DetectionCommand": "detect.ps1",
+      "LatestVersion": "ManagedByUpdateChannel",
+      "UpdateSource": "Office CDN",
+      "Rollback": "Unassign or deploy Office removal package only after pilot validation",
+      "Evidence": "health/deployment-evidence-template.md",
+      "Risk": "Medium"
+    },
+    {
+      "PackageId": "employee-resources",
+      "DisplayName": "Employee Resources",
+      "Owner": "Endpoint Engineering",
+      "Platform": "Windows",
+      "Assignment": "Required",
+      "InstallCommand": "install.ps1",
+      "DetectionCommand": "detect.ps1",
+      "LatestVersion": "2026.05.06.1",
+      "UpdateSource": "Internal package repository",
+      "Rollback": "Remove package-owned shortcuts and trusted-site entries",
+      "Evidence": "health/deployment-evidence-template.md",
+      "Risk": "Low"
+    },
+    {
+      "PackageId": "endpoint-posture-telemetry",
+      "DisplayName": "Endpoint Posture Telemetry",
+      "Owner": "Endpoint Engineering",
+      "Platform": "Windows",
+      "Assignment": "Required",
+      "InstallCommand": "install.ps1",
+      "DetectionCommand": "detect.ps1",
+      "LatestVersion": "2026.05.06.1",
+      "UpdateSource": "Internal package repository",
+      "Rollback": "Disable scheduled task and remove package-owned marker",
+      "Evidence": "health/deployment-evidence-template.md",
+      "Risk": "Low"
+    }
+  ]
+}
+

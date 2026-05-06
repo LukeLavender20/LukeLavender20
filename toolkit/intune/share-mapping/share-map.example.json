@@ -1,0 +1,24 @@
+{
+  "Version": "2026.05.06.1",
+  "Mappings": [
+    {
+      "Name": "Company",
+      "DriveLetter": "K",
+      "Path": "\\\\files.contoso.local\\Company",
+      "Description": "Primary company file workspace"
+    },
+    {
+      "Name": "Scans",
+      "DriveLetter": "S",
+      "Path": "\\\\files.contoso.local\\Scans",
+      "Description": "Scanner intake and routed documents"
+    },
+    {
+      "Name": "Production Drop",
+      "DriveLetter": "",
+      "Path": "\\\\production.contoso.local\\Drop",
+      "Description": "Production handoff shortcut without a forced drive letter"
+    }
+  ]
+}
+
