@@ -1,13 +1,25 @@
 param(
     [string]$Owner = "LukeLavender20",
-    [string]$Repository = "LukeLavender20"
+    [string]$Repository = "LukeLavender20",
+    [string]$Token = $env:GITHUB_TOKEN
 )
 
 $ErrorActionPreference = "Stop"
 
 function Get-GitHubCredential {
+    param(
+        [string]$ExplicitToken
+    )
+
+    if (-not [string]::IsNullOrWhiteSpace($ExplicitToken)) {
+        return [pscustomobject]@{
+            Username = $Owner
+            Token = $ExplicitToken
+        }
+    }
+
     $inputText = "protocol=https`nhost=github.com`n`n"
-    $credentialOutput = $inputText | git credential-manager get
+    $credentialOutput = $inputText | git credential-manager get --no-ui
     $username = $null
     $password = $null
 
@@ -17,7 +29,7 @@ function Get-GitHubCredential {
     }
 
     if ([string]::IsNullOrWhiteSpace($username) -or [string]::IsNullOrWhiteSpace($password)) {
-        throw "No GitHub credential found. Run: git credential-manager github login --device --username $Owner"
+        throw "No GitHub credential found. Run: git credential-manager github login --device --username $Owner, or set GITHUB_TOKEN for this process."
     }
 
     [pscustomobject]@{
@@ -52,7 +64,7 @@ if (-not (Test-Path -LiteralPath ".git")) {
     throw "Run this script from the root of the local profile repository."
 }
 
-$credential = Get-GitHubCredential
+$credential = Get-GitHubCredential -ExplicitToken $Token
 $repoFullName = "$Owner/$Repository"
 $repoUrl = "https://github.com/$repoFullName.git"
 

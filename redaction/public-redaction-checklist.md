@@ -22,7 +22,7 @@ Use this before publishing anything about private small-business operations, Mic
 - Use fake employees like `Installer A`, `Office User B`, and `Admin User`.
 - Use fake customers like `Sample Customer` and fake jobs like `Kitchen Remodel 1001`.
 - Use generic device names like `OFFICE-LAPTOP-01`, `SHOP-PC-01`, and `FIELD-TABLET-01`.
-- Use fake app IDs like `00000000-0000-0000-0000-000000000000`.
+- Use bracketed placeholders like `[fake-app-id]`, `[fake-tenant-id]`, and `[fake-device-id]`.
 - Summarize counts and outcomes instead of showing raw inventories.
 
 ## Safer Ways To Show The Work
