@@ -95,8 +95,13 @@ if (-not $repoExists) {
     } | Out-Null
 }
 
-$existingOrigin = git remote get-url origin 2>$null
-if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($existingOrigin)) {
+$remoteNames = @(git remote)
+$existingOrigin = $null
+if ($remoteNames -contains "origin") {
+    $existingOrigin = git remote get-url origin
+}
+
+if ([string]::IsNullOrWhiteSpace($existingOrigin)) {
     git remote add origin $repoUrl
 } elseif ($existingOrigin -ne $repoUrl) {
     git remote set-url origin $repoUrl
