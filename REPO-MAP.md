@@ -11,7 +11,8 @@ This profile repo is organized like a public-safe IT engineering portfolio.
 | [`toolkit/enterprise-map.md`](toolkit/enterprise-map.md) | Capability map for resume/interview review |
 | [`case-studies/`](case-studies) | Public-safe narratives of real operating patterns |
 | [`case-studies/public-website-ux-proof.md`](case-studies/public-website-ux-proof.md) | Mobile-first public website UX and deployment-proof pattern |
-| [`case-studies/ai-assisted-operations-assistant.md`](case-studies/ai-assisted-operations-assistant.md) | AI assistant orchestration, proof gates, and no-fake-action pattern |
+| [`case-studies/ai-assisted-operations-assistant.md`](case-studies/ai-assisted-operations-assistant.md) | Assistant request classification, approved tool use, audit-friendly responses, and validation pattern |
+| [`case-studies/operator-scheduling-inventory-ux.md`](case-studies/operator-scheduling-inventory-ux.md) | Operator-first scheduling, calendar availability, inventory receive/assign, and UI proof pattern |
 | [`redaction/public-redaction-checklist.md`](redaction/public-redaction-checklist.md) | How I keep private operational data out of public work |
 
 ## Toolkit Sections

@@ -49,7 +49,7 @@ Use screenshots only after rebuilding the page with demo data. Blur is not enoug
 Safer screenshot targets:
 - A fake NOC dashboard.
 - A fake inventory stale-work queue.
-- A fake installer assignment page.
+- A fake field assignment page.
 - A fake DocumentAI review queue.
 - A fake endpoint posture summary.
 
