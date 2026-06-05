@@ -17,10 +17,10 @@ The business needed a scheduling dashboard that could compete with normal calend
 - Popup-first calendar event editing for normal calendar changes: owner/person, title, start, duration, show-as state, all-day state, location, notes, save, delete, and explicit full-calendar fallback.
 - Selected-day event filtering so clicking one date shows that date instead of a broader week by accident.
 - Quarter-hour appointment selection across scheduling paths, so staff choose times like 1:00, 1:15, 1:30, and 1:45 instead of arbitrary minute values.
-- Sales availability views that separate open bookable windows from busy calendar blockers.
-- Reception scheduling support that keeps sales availability inside the intake form.
+- Role-based appointment availability views that separate open bookable windows from busy calendar blockers.
+- Intake scheduling support that keeps availability inside the working form.
 - Out-of-office normalization so copied or duplicated away events collapse into clearer person/day availability signals.
-- Inventory receive and give-to-installer actions that open inside the in-page modal workspace and focus the correct scan/assignment control.
+- Inventory custody and assignment actions that stay in-context with validation and regression coverage.
 - Regression tests and deployment evidence for modal visibility, focus behavior, calendar filtering, availability wording, and scroll performance.
 
 ## Design Pattern
@@ -41,12 +41,12 @@ The business needed a scheduling dashboard that could compete with normal calend
 - The page should not depend on hidden full-page detours for routine receive or handoff work.
 - Scroll and backdrop effects should not make daily dashboards feel slow.
 
-## Public-Safe Engineering Signals
+## Transferable Support Signals
 
-- Strong fit for L3 support habits: isolate the workflow failure, prove the UI path, test the regression case, and deploy with evidence.
-- Strong fit for collaboration support: calendar data is useful only when staff can edit, filter, and schedule from it safely.
-- Strong fit for endpoint/device management: inventory custody, assignment, and status should be visible and auditable.
-- Strong fit for operations tooling: staff should see the action they need without needing to understand the underlying system.
+- Support troubleshooting: isolates workflow failures, proves the broken path, tests the regression case, and deploys with evidence.
+- Collaboration support: turns calendar data into safe edit, filter, and scheduling workflows for staff.
+- Endpoint/device operations: makes custody, assignment, and status visible and auditable.
+- Operations tooling: gives staff the action they need without requiring them to understand the underlying system.
 
 ## Validation Pattern
 

@@ -4,8 +4,8 @@ Use these as source material for GitHub, LinkedIn, a resume, proposals, or case-
 
 ## Strong Public Bullets
 
-- Built a multi-app operations platform for a cabinetry workflow spanning desktop administration, ASP.NET Core web workflows, mobile installer updates, inventory, ordering, scheduling, audit logs, and reporting.
-- Designed a single-source-of-truth data model for customers, jobs, items, orders, inventory, employee records, job files, photos, status updates, and installer telemetry.
+- Built a multi-app operations platform for a field-service production workflow spanning desktop administration, ASP.NET Core web workflows, mobile field updates, inventory, ordering, scheduling, audit logs, and reporting.
+- Designed a single-source-of-truth data model for customers, jobs, items, orders, inventory, employee records, job files, photos, status updates, and field telemetry.
 - Built mobile field workflows for assigned work, status updates, required proof/photos, offline sync, and controlled API access.
 - Created health and activity surfaces that expose application, endpoint, deployment, and operational drift as reviewable evidence instead of tribal knowledge.
 - Built Microsoft 365 and Intune automation for Win32 package publishing, Company Portal apps, managed browser favorites, employee shortcuts, Office deployment, endpoint telemetry, and device visibility reporting.
@@ -13,17 +13,17 @@ Use these as source material for GitHub, LinkedIn, a resume, proposals, or case-
 - Implemented Office onboarding guardrails that reduce first-run friction and keep employees pointed at work accounts instead of personal accounts.
 - Built read-only endpoint posture reporting for Windows version, update state, Defender, Firewall, BitLocker, TPM/Secure Boot, pending reboot, browsers, Office, Teams, and Intune agent health.
 - Designed a small-business network modernization model around stable employee-facing resource names, DNS hygiene, share access, monitoring, status pages, and documented ownership boundaries.
-- Created internal NOC concepts combining network, endpoint, Microsoft 365, syslog, SNMP, NetFlow, and app telemetry into operational dashboards.
+- Modeled NOC-style dashboards combining network, endpoint, Microsoft 365, syslog/SNMP/NetFlow, and app telemetry into reviewable operational views.
 - Built DocumentAI workflows for document intake, source hygiene, AI extraction, review states, customer/job matching guardrails, order suggestions, and human approval before commit.
 - Built conservative scan/document intake tooling that stages photos and PDFs, creates manifests, preserves originals, records source metadata, and prevents weak OCR or filename hints from polluting business records.
 - Built a mobile-first public service website with tap-friendly service cards, modal detail panels, crawlable service pages, interactive educational demos, and proof-driven deployment validation.
 - Designed public website validation around asset version checks, security headers, mobile overflow checks, browser smoke tests, and screenshot evidence before calling a deployment complete.
-- Built an AI-assisted operations assistant pattern that answers directly when safe, routes real workflow tasks to behind-the-scenes workers, and refuses to claim action without system proof.
-- Added second-pass assistant validation that separates live action from draft-only work, checks proof, flags fake-action risk, and returns one clear next action.
-- Built a no-secret operations issue register for assistant worker lanes, cloud/document tooling, endpoint proof, authentication blockers, and degraded integrations.
+- Built an AI-assisted operations assistant pattern that answers directly when safe, routes real workflow tasks to approved tools/review paths, and refuses to claim action without system proof.
+- Added assistant validation that separates live action from draft-only work, checks proof, flags unproven-action risk, and returns one clear next action.
+- Built an operations issue register for unavailable assistant, cloud/document, endpoint proof, authentication, and integration lanes.
 - Built read-only slow-computer triage surfaces that highlight memory pressure, security scan clues, stale telemetry, and top process evidence without changing employee devices.
 - Created backup, restore, and continuity runbooks with staging gates, restore-proof expectations, and no-secret handoff notes for business continuity.
-- Led operational modernization across file organization, SMB/SharePoint boundaries, printer/scanner workflows, endpoint recovery, business branding, Teams/voice assets, and shop-specific workflows.
+- Owned hands-on modernization across file organization, SMB/SharePoint boundaries, printer/scanner workflows, endpoint recovery, Teams/voice assets, and shop-specific workflows.
 - Created runbooks and handoff formats that identify owner, scope, rollback, verification, evidence, and live-system boundaries before production changes.
 
 ## Short Profile Summary
@@ -32,20 +32,20 @@ I build practical IT and operations systems for small businesses: Microsoft 365 
 
 ## Current Target Profile
 
-I am targeting L3 network operations support, collaboration support, endpoint/device management, and data center facilities roles. My experience path starts with Cisco networking fundamentals, moves through servers and break/fix support, and now centers on reliable device management, Microsoft 365 operations, production workflow systems, network visibility, and proof-backed support.
+My strongest fit is hands-on IT operations work: endpoint management, Microsoft 365/collaboration support, L3-style troubleshooting, and network operations roles, with facilities-adjacent hardware and device-custody readiness. My experience path starts with Cisco networking fundamentals, moves through servers and break/fix support, and now centers on reliable device management, Microsoft 365 operations, production workflow systems, network visibility, and proof-backed support.
 
 ## Education And Certification Notes
 
-- Winfield High School, graduated 2018.
-- Business Management focus.
-- Completed a 2+2 high school/vocational Cisco networking track during the second half of high school.
-- Cisco/CCNA coursework and exam history through 2020/2021.
-- Certifications should be presented as expired/not currently active unless current proof says otherwise.
+- High school graduate with business coursework.
+- Completed high school/vocational Cisco networking training.
+- Completed Cisco networking coursework and CCNA exam preparation/testing through 2020/2021.
+- No active Cisco certification should be claimed unless current proof changes.
+- Private resumes and job applications can include exact school, graduation year, employer, and assignment details when appropriate.
 
 ## Employment Notes
 
-- EOS IT Solutions / Meta: short-term support assignment for three months, ending in March.
-- Positioning language: networking foundation, server exposure, break/fix support, deeper networking/server work, endpoint/device management, and data center facilities readiness.
+- Completed a short-term enterprise IT support assignment.
+- Positioning language: networking foundation, server exposure, break/fix support, endpoint/device management, Microsoft 365 support, and hardware/facilities-adjacent operational discipline.
 
 ## Resume Positioning
 
@@ -64,18 +64,18 @@ Possible title directions:
 ## Fresh Resume Bullets For Network / Collaboration / Device Roles
 
 - Built and supported practical operations tooling across Microsoft 365, endpoint management, internal web apps, scheduling, inventory, reporting, and network visibility.
-- Built scheduling workflows that show day-scoped calendar events, quarter-hour appointment choices, in-place event editing, out-of-office normalization, and sales availability windows instead of raw calendar clutter.
-- Integrated consultation scheduling into a reception workflow so staff can pick available sales windows without leaving the intake form.
-- Built inventory receive and assign workflows with in-page modal actions, eligibility checks, regression tests, and deployment proof.
-- Designed action-log surfaces that turn raw sign-in, printer, device, and business-system events into readable "person did action" rows with proof behind click-through details.
-- Built direct report answers for current operational questions such as who signed in, what happened today, recent inventory actions, and current workflow blockers.
+- Built scheduling workflows that show day-scoped calendar events, quarter-hour appointment choices, in-place event editing, absence normalization, and role-based availability windows instead of raw calendar clutter.
+- Integrated appointment availability into an intake workflow so staff can schedule without leaving the working form.
+- Built inventory custody and assignment workflows with in-page modal actions, eligibility checks, regression tests, and deployment proof.
+- Designed authorized activity-summary surfaces that turn raw operational telemetry into readable support/audit rows with proof behind click-through details.
+- Built direct report answers for current operational questions such as recent work, inventory actions, and workflow blockers.
 - Worked across network fundamentals, servers, break/fix support, endpoint deployment, Microsoft 365, calendar/collaboration workflows, and application support.
 - Uses proof-first support habits: identify the system of record, verify the action, record evidence, and avoid claiming a change happened without returned proof.
 
 ## Public-Safe Project Names
 
 - Small Business Operations Platform
-- Cabinet Shop Workflow System
+- Field-Service Operations Workflow
 - Microsoft 365 Endpoint Baseline
 - Employee IT Self-Service Portal
 - Endpoint Posture Telemetry
@@ -85,7 +85,7 @@ Possible title directions:
 - Mobile-First Public Service Website
 - AI-Assisted Operations Assistant
 - Operator Scheduling And Inventory UX
-- Calendar Availability And Reception Scheduling Workflow
+- Calendar Availability And Intake Scheduling Workflow
 
 ## Avoid Overclaiming
 

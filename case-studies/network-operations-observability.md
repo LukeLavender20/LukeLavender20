@@ -13,9 +13,9 @@ The environment needed reliable access to shared files, internal start/status pa
 ## What I Helped Build
 
 - Employee start page and status page model.
-- Stable internal aliases for common resources like files, scans, CNC/design shares, printers, Wi-Fi help, cameras, and monitoring.
+- Stable internal aliases for common resources like files, scans, department-specific shares, printers, Wi-Fi help, cameras, and monitoring.
 - Monitoring patterns for service availability, endpoint command queue health, app version drift, and wrong-network detection.
-- Human-readable action-log patterns for sign-ins, printer events, device connection state, application actions, and click-through proof.
+- Authorized activity-summary patterns for support and audit review, with click-through proof behind operational events.
 - Cross-session ownership model:
   - Network lane owns routing, DNS, SMB server behavior, switches, Wi-Fi, monitoring, and firewalling.
   - 365/endpoint lane owns Intune, Windows policy, shortcuts, mapped resources, Office, browser policy, and endpoint telemetry.
@@ -28,7 +28,7 @@ The environment needed reliable access to shared files, internal start/status pa
 - Use rollback and verification notes before changing production paths.
 - Prefer monitoring and visibility before intrusive repair behavior.
 - Treat wrong-network state as a blocked condition, not a reason to run risky repair commands.
-- Prefer "person did action" event rows for operators, with raw telemetry available only when a support person needs the detail.
+- Prefer summarized operational event rows for operators, with raw telemetry available only when a support person needs the detail.
 
 ## Public Artifacts To Show
 
