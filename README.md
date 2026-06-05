@@ -24,6 +24,7 @@ I keep sanitized examples of the enterprise patterns I use in [`toolkit/`](toolk
 - [`Managed software catalog`](toolkit/software-catalog): package ownership, assignment, detection, updates, and rollback.
 - [`Deployment evidence template`](toolkit/health/deployment-evidence-template.md): the audit trail I expect before broad rollout.
 - [`Network/endpoint handoff template`](toolkit/network/joint-change-handoff-template.md): owner, rollback, verification, and evidence for cross-domain changes.
+- [`Public website UX case study`](case-studies/public-website-ux-proof.md): mobile-first service discovery, tap-friendly detail panels, crawlable service pages, and proof-driven deployment checks.
 
 ## What I Work On
 
@@ -81,6 +82,23 @@ Built workflow support for document-heavy operations:
 - Proposal/dry-run review patterns before committing changes.
 - Human review checkpoints for risk, grouping, and disposition decisions.
 - Operational summaries that turn messy file/document states into actionable work queues.
+
+### Public Website UX And Proof
+
+Built a public service website experience focused on fast mobile discovery:
+- Mobile-first homepage flow for visitors arriving from social or direct links.
+- Tap-friendly service cards and modal detail panels to avoid long scrolling pages.
+- Crawlable service pages with clear service positioning and structured content.
+- Interactive educational demos that explain technical concepts without exposing private systems.
+- Deployment proof checks for headers, asset versions, mobile overflow, browser behavior, and screenshots.
+
+### AI-Assisted Operations Assistant
+
+Built an internal assistant pattern for business operations:
+- Direct answers first, with workflow routing only when a real task needs records or proof.
+- Behind-the-scenes worker routing for implementation, critique, document work, and human-tone review.
+- No-fake-action rules: the assistant reports what changed only when a system of record proves it.
+- Human-readable summaries with blockers, owner, proof, and next action instead of raw tool output.
 
 ## How I Work
 

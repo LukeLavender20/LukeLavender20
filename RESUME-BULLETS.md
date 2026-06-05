@@ -16,6 +16,9 @@ Use these as source material for GitHub, LinkedIn, a resume, proposals, or case-
 - Created internal NOC concepts combining network, endpoint, Microsoft 365, syslog, SNMP, NetFlow, and app telemetry into operational dashboards.
 - Built DocumentAI workflows for document intake, source hygiene, AI extraction, review states, customer/job matching guardrails, order suggestions, and human approval before commit.
 - Built conservative scan/document intake tooling that stages photos and PDFs, creates manifests, preserves originals, records source metadata, and prevents weak OCR or filename hints from polluting business records.
+- Built a mobile-first public service website with tap-friendly service cards, modal detail panels, crawlable service pages, interactive educational demos, and proof-driven deployment validation.
+- Designed public website validation around asset version checks, security headers, mobile overflow checks, browser smoke tests, and screenshot evidence before calling a deployment complete.
+- Built an AI-assisted operations assistant pattern that answers directly when safe, routes real workflow tasks to behind-the-scenes workers, and refuses to claim action without system proof.
 - Led operational modernization across file organization, SMB/SharePoint boundaries, printer/scanner workflows, endpoint recovery, business branding, Teams/voice assets, and shop-specific workflows.
 - Created runbooks and handoff formats that identify owner, scope, rollback, verification, evidence, and live-system boundaries before production changes.
 
@@ -43,10 +46,11 @@ Possible title directions:
 - DocumentAI Review And Cleanup Workflow
 - Network Operations Visibility Model
 - Customer/Job File Organization Framework
+- Mobile-First Public Service Website
+- AI-Assisted Operations Assistant
 
 ## Avoid Overclaiming
 
 Use "built", "designed", "implemented", "automated", "created", and "standardized" for completed work.
 
 Use "planned", "prototyped", "roadmapped", "modeled", or "designed a path for" when a feature is staged, partial, or not fully deployed.
-

@@ -10,6 +10,7 @@ This profile repo is organized like a public-safe IT engineering portfolio.
 | [`toolkit/README.md`](toolkit/README.md) | Practical enterprise IT toolkit |
 | [`toolkit/enterprise-map.md`](toolkit/enterprise-map.md) | Capability map for resume/interview review |
 | [`case-studies/`](case-studies) | Public-safe narratives of real operating patterns |
+| [`case-studies/public-website-ux-proof.md`](case-studies/public-website-ux-proof.md) | Mobile-first public website UX and deployment-proof pattern |
 | [`redaction/public-redaction-checklist.md`](redaction/public-redaction-checklist.md) | How I keep private operational data out of public work |
 
 ## Toolkit Sections
@@ -33,4 +34,3 @@ This profile repo is organized like a public-safe IT engineering portfolio.
 ## Safety Model
 
 Everything here is sanitized. Production tenant IDs, domains, IPs, device names, customer names, employee names, app IDs, secrets, and live paths stay out of this repo.
-
