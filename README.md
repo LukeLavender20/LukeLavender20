@@ -25,6 +25,7 @@ I keep sanitized examples of the enterprise patterns I use in [`toolkit/`](toolk
 - [`Deployment evidence template`](toolkit/health/deployment-evidence-template.md): the audit trail I expect before broad rollout.
 - [`Network/endpoint handoff template`](toolkit/network/joint-change-handoff-template.md): owner, rollback, verification, and evidence for cross-domain changes.
 - [`Public website UX case study`](case-studies/public-website-ux-proof.md): mobile-first service discovery, tap-friendly detail panels, crawlable service pages, and proof-driven deployment checks.
+- [`AI-assisted operations assistant case study`](case-studies/ai-assisted-operations-assistant.md): one assistant front door, behind-the-scenes worker routing, proof gates, issue registers, and no-fake-action behavior.
 
 ## What I Work On
 
@@ -98,6 +99,8 @@ Built an internal assistant pattern for business operations:
 - Direct answers first, with workflow routing only when a real task needs records or proof.
 - Behind-the-scenes worker routing for implementation, critique, document work, and human-tone review.
 - No-fake-action rules: the assistant reports what changed only when a system of record proves it.
+- Second-pass validation that checks action taken versus draft-only, proof attached, fake-action risk, security/privacy risk, blockers, and next action.
+- No-secret issue registers for unavailable worker, document, endpoint, and cloud lanes so setup gaps become visible work.
 - Human-readable summaries with blockers, owner, proof, and next action instead of raw tool output.
 
 ## How I Work

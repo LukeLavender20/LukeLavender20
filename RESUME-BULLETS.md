@@ -19,6 +19,10 @@ Use these as source material for GitHub, LinkedIn, a resume, proposals, or case-
 - Built a mobile-first public service website with tap-friendly service cards, modal detail panels, crawlable service pages, interactive educational demos, and proof-driven deployment validation.
 - Designed public website validation around asset version checks, security headers, mobile overflow checks, browser smoke tests, and screenshot evidence before calling a deployment complete.
 - Built an AI-assisted operations assistant pattern that answers directly when safe, routes real workflow tasks to behind-the-scenes workers, and refuses to claim action without system proof.
+- Added second-pass assistant validation that separates live action from draft-only work, checks proof, flags fake-action risk, and returns one clear next action.
+- Built a no-secret operations issue register for assistant worker lanes, cloud/document tooling, endpoint proof, authentication blockers, and degraded integrations.
+- Built read-only slow-computer triage surfaces that highlight memory pressure, security scan clues, stale telemetry, and top process evidence without changing employee devices.
+- Created backup, restore, and continuity runbooks with staging gates, restore-proof expectations, and no-secret handoff notes for business continuity.
 - Led operational modernization across file organization, SMB/SharePoint boundaries, printer/scanner workflows, endpoint recovery, business branding, Teams/voice assets, and shop-specific workflows.
 - Created runbooks and handoff formats that identify owner, scope, rollback, verification, evidence, and live-system boundaries before production changes.
 
