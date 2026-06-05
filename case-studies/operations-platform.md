@@ -17,6 +17,8 @@ The business needed more than a generic CRM. Office staff needed a way to track 
 - Mobile installer app for assigned work, status updates, install photos, job notes, and offline sync.
 - Shared data model for customers, jobs, items, orders, receiving logs, job updates, job files, employee records, vendors, and installer telemetry.
 - Health/evidence pages that surface deployment status and operational risks.
+- Calendar and scheduling workflows that combine task data, Microsoft 365 events, selected-day filtering, and availability windows.
+- Reception scheduling support that keeps availability checks inside the intake workflow instead of forcing staff to switch tools.
 
 ## Architecture Pattern
 
@@ -32,6 +34,10 @@ The business needed more than a generic CRM. Office staff needed a way to track 
 - Assign received items to installers.
 - Track assigned-but-not-installed work.
 - Require installer proof/photos for completed install states.
+- Edit calendar events in the scheduling popup instead of sending employees to a separate page for normal edits.
+- Offer quarter-hour scheduling choices so appointments stay consistent and easy to communicate.
+- Show sales availability as open bookable windows, separate from busy calendar blockers.
+- Normalize copied out-of-office style events so the list explains who is unavailable without duplicate clutter.
 - Show stale work queues for missing customer, job, installer, proof, or status data.
 - Keep employee self-service links and operational dashboards available from obvious browser/start-menu entry points.
 
@@ -42,6 +48,7 @@ The business needed more than a generic CRM. Office staff needed a way to track 
 - Write validation scripts for deployment packages.
 - Keep dated deployment evidence so future troubleshooting has context.
 - Treat employee usability as part of reliability: the right link, shortcut, or dashboard should be easy to find.
+- Treat confusing next steps, hidden popups, clipped controls, and slow scrolling as production defects.
 
 ## Public Artifacts To Show
 

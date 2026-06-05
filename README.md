@@ -1,8 +1,19 @@
 # Hi, I'm Luke
 
-I build practical IT systems that make businesses easier to run: Microsoft 365, Entra ID, Intune, Autopilot, Defender, BitLocker, LAPS, endpoint telemetry, network shares, internal web apps, inventory/workflow tools, and AI-assisted document processing.
+I build practical IT systems that make businesses easier to run: Microsoft 365, Entra ID, Intune, Autopilot, Defender, BitLocker, LAPS, endpoint telemetry, network shares, internal web apps, inventory/workflow tools, scheduling systems, and AI-assisted document processing.
 
 My main work is a full operations platform for a production business. It connects office staff, installers, inventory, customer/job records, documents, Microsoft 365, endpoint deployment, network health, and self-service support into one managed environment.
+
+## Current Direction
+
+I am positioning my work toward L3 network operations support, collaboration support, endpoint/device management, and data center facilities work. My path has moved from Cisco networking fundamentals into servers, break/fix support, endpoint operations, Microsoft 365, internal application support, and production workflow systems.
+
+## Background Snapshot
+
+- Winfield High School graduate, 2018, with a Business Management focus.
+- Completed a 2+2 high school/vocational Cisco networking track during the second half of high school.
+- Cisco/CCNA coursework and exam history through 2020/2021; certifications are not currently active.
+- Completed a short-term EOS IT Solutions / Meta support assignment for three months, ending in March.
 
 ## Toolkit Highlights
 
@@ -26,13 +37,14 @@ I keep sanitized examples of the enterprise patterns I use in [`toolkit/`](toolk
 - [`Network/endpoint handoff template`](toolkit/network/joint-change-handoff-template.md): owner, rollback, verification, and evidence for cross-domain changes.
 - [`Public website UX case study`](case-studies/public-website-ux-proof.md): mobile-first service discovery, tap-friendly detail panels, crawlable service pages, and proof-driven deployment checks.
 - [`AI-assisted operations assistant case study`](case-studies/ai-assisted-operations-assistant.md): one assistant front door, behind-the-scenes worker routing, proof gates, issue registers, and no-fake-action behavior.
+- [`Operator scheduling and inventory UX case study`](case-studies/operator-scheduling-inventory-ux.md): calendar availability, in-place event editing, quarter-hour scheduling, inventory receive/assign workflows, and proof-backed UI fixes.
 
 ## What I Work On
 
 - Microsoft 365 and Intune deployment: Autopilot planning, Company Portal apps, Win32 app packaging, Office configuration, browser bookmarks, employee shortcuts, trusted sites, endpoint telemetry, and Entra/Intune device visibility reporting.
 - Windows endpoint operations: Defender, BitLocker, Firewall, Windows Update, TPM/Secure Boot, LAPS, browser health, Office/Teams versions, inventory, drift detection, and quiet self-healing packages.
 - Network and infrastructure operations: stable DNS names, SMB shares, monitoring, alerting, uptime checks, switch/router observability, and employee-friendly entry points.
-- Business workflow software: desktop, web, and mobile tools for customer/job tracking, inventory receiving, installer assignment, photos/proof, scheduling, and reporting.
+- Business workflow software: desktop, web, and mobile tools for customer/job tracking, inventory receiving, installer assignment, photos/proof, scheduling, calendar editing, sales availability, and reporting.
 - DocumentAI and automation: document intake, classification, extraction, cleanup review, operational summaries, and human-in-the-loop controls.
 - Operational documentation: runbooks, deployment evidence, rollback plans, health dashboards, and admin handoff notes.
 
@@ -46,6 +58,8 @@ Built a multi-app operations system for a cabinetry workflow:
 - Mobile installer app for assigned work, status updates, photos, and offline sync.
 - Mongo-backed data model for customers, jobs, items, orders, inventory, updates, files, and telemetry.
 - Health and activity dashboards to make issues visible before they become support calls.
+- Scheduling dashboard with in-place calendar event editing, day-scoped event lists, quarter-hour time selection, out-of-office normalization, and sales availability windows.
+- Inventory workflows for receiving items, assigning items to installers, and validating the in-page modal path with regression tests and deployment proof.
 
 ### Microsoft 365 / Intune Endpoint Baseline
 
@@ -64,6 +78,7 @@ Helped build an operations model around stable internal names, monitoring, and e
 - Stable SMB/share names for office, scans, CNC, and design workflows.
 - Monitoring and dashboard patterns for reachability, service health, command queues, endpoint versions, and wrong-network detection.
 - Change-control notes separating network ownership from Microsoft 365/endpoint ownership.
+- Human-readable action-log patterns for sign-ins, device state, printer activity, business-record actions, and click-through proof instead of raw log noise.
 
 ### Enterprise-Style Deployment Evidence
 
@@ -102,6 +117,7 @@ Built an internal assistant pattern for business operations:
 - Second-pass validation that checks action taken versus draft-only, proof attached, fake-action risk, security/privacy risk, blockers, and next action.
 - No-secret issue registers for unavailable worker, document, endpoint, and cloud lanes so setup gaps become visible work.
 - Human-readable summaries with blockers, owner, proof, and next action instead of raw tool output.
+- Direct report answers for current operational questions such as sign-ins, inventory actions, and recent work before falling back to broader assistant workflows.
 
 ## How I Work
 
@@ -113,4 +129,4 @@ Built an internal assistant pattern for business operations:
 
 ## Tech I Use
 
-Windows, PowerShell, Microsoft Graph, Entra ID, Intune, Microsoft 365 Apps, Defender, BitLocker, LAPS, ASP.NET Core, Razor Pages, .NET desktop apps, MAUI, MongoDB, Azure, Linux, Docker, Grafana, Prometheus, Loki, Uptime Kuma, Ansible, SMB, DNS, and AI-assisted document workflows.
+Windows, PowerShell, Microsoft Graph, Exchange/Outlook calendars, Teams collaboration, Entra ID, Intune, Microsoft 365 Apps, Defender, BitLocker, LAPS, ASP.NET Core, Razor Pages, .NET desktop apps, MAUI, MongoDB, Azure, Linux, Caddy, systemd, Docker, Grafana, Prometheus, Loki, Uptime Kuma, Ansible, SMB, DNS, Ubiquiti/UniFi operations concepts, and AI-assisted document workflows.

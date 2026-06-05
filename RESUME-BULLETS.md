@@ -30,6 +30,23 @@ Use these as source material for GitHub, LinkedIn, a resume, proposals, or case-
 
 I build practical IT and operations systems for small businesses: Microsoft 365 and Intune automation, Windows endpoint management, network observability, internal web apps, shop-floor workflows, and AI-assisted document processing. My work focuses on reliability, clear handoffs, self-service, rollback, and evidence-driven operations.
 
+## Current Target Profile
+
+I am targeting L3 network operations support, collaboration support, endpoint/device management, and data center facilities roles. My experience path starts with Cisco networking fundamentals, moves through servers and break/fix support, and now centers on reliable device management, Microsoft 365 operations, production workflow systems, network visibility, and proof-backed support.
+
+## Education And Certification Notes
+
+- Winfield High School, graduated 2018.
+- Business Management focus.
+- Completed a 2+2 high school/vocational Cisco networking track during the second half of high school.
+- Cisco/CCNA coursework and exam history through 2020/2021.
+- Certifications should be presented as expired/not currently active unless current proof says otherwise.
+
+## Employment Notes
+
+- EOS IT Solutions / Meta: short-term support assignment for three months, ending in March.
+- Positioning language: networking foundation, server exposure, break/fix support, deeper networking/server work, endpoint/device management, and data center facilities readiness.
+
 ## Resume Positioning
 
 Possible title directions:
@@ -37,8 +54,23 @@ Possible title directions:
 - Microsoft 365 / Intune Engineer
 - IT Operations Engineer
 - Infrastructure And Endpoint Automation Engineer
+- L3 Network Operations Support
+- Collaboration Support Engineer
+- Endpoint / Device Management Technician
+- Data Center Facilities Technician
 - Full-Stack Operations Developer
 - Small Business Systems Architect
+
+## Fresh Resume Bullets For Network / Collaboration / Device Roles
+
+- Built and supported practical operations tooling across Microsoft 365, endpoint management, internal web apps, scheduling, inventory, reporting, and network visibility.
+- Built scheduling workflows that show day-scoped calendar events, quarter-hour appointment choices, in-place event editing, out-of-office normalization, and sales availability windows instead of raw calendar clutter.
+- Integrated consultation scheduling into a reception workflow so staff can pick available sales windows without leaving the intake form.
+- Built inventory receive and assign workflows with in-page modal actions, eligibility checks, regression tests, and deployment proof.
+- Designed action-log surfaces that turn raw sign-in, printer, device, and business-system events into readable "person did action" rows with proof behind click-through details.
+- Built direct report answers for current operational questions such as who signed in, what happened today, recent inventory actions, and current workflow blockers.
+- Worked across network fundamentals, servers, break/fix support, endpoint deployment, Microsoft 365, calendar/collaboration workflows, and application support.
+- Uses proof-first support habits: identify the system of record, verify the action, record evidence, and avoid claiming a change happened without returned proof.
 
 ## Public-Safe Project Names
 
@@ -52,6 +84,8 @@ Possible title directions:
 - Customer/Job File Organization Framework
 - Mobile-First Public Service Website
 - AI-Assisted Operations Assistant
+- Operator Scheduling And Inventory UX
+- Calendar Availability And Reception Scheduling Workflow
 
 ## Avoid Overclaiming
 
