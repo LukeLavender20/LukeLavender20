@@ -40,6 +40,18 @@ The business needed more than a generic CRM. Office staff needed a way to track 
 - Normalize copied out-of-office style events so the list explains who is unavailable without duplicate clutter.
 - Show stale work queues for missing customer, job, field owner, proof, or status data.
 - Keep employee self-service links and operational dashboards available from obvious browser/start-menu entry points.
+- Keep sales and scheduling work focused on the next action rather than forcing employees through dense admin filters first.
+- Link order and supplier-confirmation evidence back to the intended operational record.
+- Separate exact duplicate cleanup from review-required customer/job/file ambiguity.
+- Preserve source evidence when document or file intake creates both original and managed copies.
+
+## Recent Improvements
+
+- Simplified operational dashboards into work-board style pages with primary queues, compact filters, and clearer action paths.
+- Hardened readability across multiple display themes so text, controls, tables, modals, badges, and action rows stay usable.
+- Added safer duplicate-record maintenance patterns: dry-run proof, link counting, backup collection, tombstone state, merge pointers, and post-apply verification.
+- Improved document/file hygiene by treating duplicate-looking folders and source copies as review candidates unless the system can prove a reversible cleanup path.
+- Added proof-ledger entries so later operators can see what is live, what is source-ready, what is blocked, and what still needs signed-in user acceptance.
 
 ## Engineering Practices
 
@@ -49,6 +61,8 @@ The business needed more than a generic CRM. Office staff needed a way to track 
 - Keep dated deployment evidence so future troubleshooting has context.
 - Treat employee usability as part of reliability: the right link, shortcut, or dashboard should be easy to find.
 - Treat confusing next steps, hidden popups, clipped controls, and slow scrolling as production defects.
+- Use explicit no-overlap locks when multiple workers are changing adjacent app surfaces.
+- Never claim a cleanup, send, deploy, or workflow action happened unless the system of record provides proof.
 
 ## Public Artifacts To Show
 

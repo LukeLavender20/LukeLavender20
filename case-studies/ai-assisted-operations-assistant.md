@@ -27,6 +27,8 @@ The goal was to make the assistant feel like a direct conversation while still r
 - A setup-blocker register so unavailable or degraded integrations are tracked instead of rediscovered repeatedly.
 - Operations surfaces for integration status, endpoint performance clues, log presets, backup proof, and continuity posture.
 - Source tests that lock in proof language, action-state wording, and workflow routing expectations.
+- Scoped coordination locks and handoff notes so multiple workers can improve adjacent systems without overlapping active changes.
+- Fallback routing behavior so configured backup workers can help when a primary lane is unavailable, rate-limited, or lower quality for the request.
 
 ## Operating Pattern
 
@@ -38,6 +40,7 @@ The assistant follows a simple sequence:
 4. Treat review output as evidence until a real system tool proves a change.
 5. Return the result in normal language: answer, proof, blocker if any, and next action.
 6. Track unresolved setup gaps in an operations register so they become visible work.
+7. Use scoped locks, worker heartbeats, and proof reports when parallel workers are touching related app or data surfaces.
 
 ## Proof And Safety Rules
 
@@ -47,6 +50,8 @@ The assistant follows a simple sequence:
 - A file is only summarized from pasted text, uploaded content, or a connected file tool that proves access.
 - A device is only changed through approved endpoint tooling with scope, owner, and validation.
 - Authentication, authorization, and unavailable-integration issues become tracked blockers, not hidden failures.
+- Duplicate cleanup is dry-run first, backed up before apply, tombstoned instead of deleted, and blocked when linked records require review.
+- Ambiguous duplicate-looking files or folders become review candidates unless exact evidence and rollback proof make them safe to clean up.
 
 ## Public-Safe Engineering Signals
 
@@ -56,6 +61,8 @@ The assistant follows a simple sequence:
 - Endpoint performance triage that surfaces memory pressure, security scan clues, and stale telemetry without remoting into user devices.
 - Backup and continuity runbooks that require restore proof, staging gates, and no-secret handoff notes.
 - Rate limiting and guardrails around mobile/field authentication paths.
+- No-overlap coordination for implementation, QA, deployment, data maintenance, and proof-writing lanes.
+- Fallback routing that treats paid APIs as escalation tools, not as the default answer for every request.
 
 ## Validation Pattern
 

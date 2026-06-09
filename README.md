@@ -8,6 +8,18 @@ My main project is a small-business operations platform that supports job tracki
 
 My strongest fit is hands-on IT operations work: endpoint management, Microsoft 365/collaboration support, L3-style troubleshooting, and network operations roles, with facilities-adjacent hardware and device-custody readiness. My path moved from Cisco networking fundamentals into servers, break/fix support, endpoint operations, Microsoft 365, internal application support, and production workflow systems.
 
+## Recent Focus
+
+Recent work I can describe publicly:
+
+- Reworked operational dashboards so employees land on the next action first instead of hunting through dense admin screens.
+- Hardened theme/readability behavior across internal web-app pages, modals, tables, forms, inventory views, scheduling views, reports, and public pages.
+- Improved ordering workflows so supplier-confirmation paste data stays attached to the right order instead of becoming loose notes.
+- Built safer customer duplicate cleanup tooling that backs up records, tombstones duplicate rows, preserves merge pointers, and refuses risky linked merges without review.
+- Coordinated multiple AI-assisted worker lanes with scoped locks, proof reports, release gates, and no-overlap rules so parallel work does not trample active changes.
+- Added assistant fallback behavior so one employee-facing AI front door can use the best available configured worker while still reporting blockers honestly.
+- Turned messy operational findings into review queues with proof, owner, rollback path, and next action instead of silent destructive cleanup.
+
 ## Toolkit Highlights
 
 I keep sanitized examples of the enterprise patterns I use in [`toolkit/`](toolkit/README.md). Good starting points:
@@ -43,6 +55,8 @@ Built a multi-app operations system for a field-service production workflow:
 - Health and activity dashboards to make issues visible before they become support calls.
 - Scheduling dashboard with in-place calendar event editing, day-scoped event lists, quarter-hour time selection, absence normalization, and role-based availability windows.
 - Inventory workflows for receiving, custody/assignment, and validating the in-page modal path with regression tests and deployment proof.
+- Action-first dashboards for sales, scheduling, inventory, ordering, receiving, installer work, reporting, and document review.
+- Safer cleanup/merge utilities for duplicate records and document/file hygiene, with backup and audit evidence before live changes.
 
 ### Microsoft 365 / Intune Endpoint Baseline
 
@@ -101,6 +115,8 @@ Built an internal assistant pattern for business operations:
 - Tracks setup blockers for unavailable document, endpoint, cloud, and assistant integrations.
 - Returns plain-language answers with proof, blocker, owner, and next action instead of raw tool output.
 - Answers current operational report questions before falling back to broader assistant workflows.
+- Parallel-worker coordination with scoped locks, proof ledgers, and explicit handoffs so multiple assistants can help without overlapping unsafe work.
+- Fallback routing across configured AI lanes and local/private workers, with paid APIs treated as escalation tools instead of the default answer for every problem.
 
 ## How I Work
 

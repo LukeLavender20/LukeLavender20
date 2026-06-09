@@ -16,11 +16,17 @@ Use these as source material for GitHub, LinkedIn, a resume, proposals, or case-
 - Modeled NOC-style dashboards combining network, endpoint, Microsoft 365, syslog/SNMP/NetFlow, and app telemetry into reviewable operational views.
 - Built DocumentAI workflows for document intake, source hygiene, AI extraction, review states, customer/job matching guardrails, order suggestions, and human approval before commit.
 - Built conservative scan/document intake tooling that stages photos and PDFs, creates manifests, preserves originals, records source metadata, and prevents weak OCR or filename hints from polluting business records.
+- Built duplicate cleanup tooling that backs up records, tombstones duplicate rows, preserves merge pointers, counts linked records before apply, and separates safe automatic cleanup from review-required cases.
+- Reworked dense operational dashboards into next-action work boards for sales, scheduling, inventory, ordering, receiving, installer work, reporting, and document review.
+- Hardened internal web-app theme/readability behavior across dashboards, modals, tables, forms, status chips, action buttons, inventory views, scheduling views, and public pages.
+- Improved supplier/order confirmation capture so pasted operational evidence stays linked to the intended order instead of becoming unowned notes.
 - Built a mobile-first public service website with tap-friendly service cards, modal detail panels, crawlable service pages, interactive educational demos, and proof-driven deployment validation.
 - Designed public website validation around asset version checks, security headers, mobile overflow checks, browser smoke tests, and screenshot evidence before calling a deployment complete.
 - Built an AI-assisted operations assistant pattern that answers directly when safe, routes real workflow tasks to approved tools/review paths, and refuses to claim action without system proof.
 - Added assistant validation that separates live action from draft-only work, checks proof, flags unproven-action risk, and returns one clear next action.
 - Built an operations issue register for unavailable assistant, cloud/document, endpoint proof, authentication, and integration lanes.
+- Coordinated multiple AI-assisted implementation, review, QA, and publish lanes with scoped locks, proof reports, and no-overlap release gates.
+- Designed assistant fallback routing across configured AI providers, local/private workers, document lanes, and paid API escalation while keeping one employee-facing assistant identity.
 - Built read-only slow-computer triage surfaces that highlight memory pressure, security scan clues, stale telemetry, and top process evidence without changing employee devices.
 - Created backup, restore, and continuity runbooks with staging gates, restore-proof expectations, and no-secret handoff notes for business continuity.
 - Owned hands-on modernization across file organization, SMB/SharePoint boundaries, printer/scanner workflows, endpoint recovery, Teams/voice assets, and shop-specific workflows.
